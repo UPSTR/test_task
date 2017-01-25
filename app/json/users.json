@@ -1,0 +1,98 @@
+[
+  {
+    "login": "User 1",
+    "email": "user1@mail.com",
+    "name": "User ibn admin",
+    "type": "admin"
+  },
+  {
+    "login": "User 2",
+    "email": "user2@mail.com",
+    "name": "User ibn user",
+    "type": "user"
+  },
+  {
+    "login": "User 3",
+    "email": "user3@mail.com",
+    "name": "User ibn moderator",
+    "type": "moderator"
+  },
+  {
+    "login": "User 4",
+    "email": "user4@mail.com",
+    "name": "User ibn manager",
+    "type": "manager"
+  },
+  {
+    "login": "User 5",
+    "email": "user5@mail.com",
+    "name": "User ibn user",
+    "type": "user"
+  },
+  {
+    "login": "User 6",
+    "email": "user6@mail.com",
+    "name": "User ibn admin",
+    "type": "admin"
+  },
+  {
+    "login": "User 7",
+    "email": "user7@mail.com",
+    "name": "User ibn user",
+    "type": "user"
+  },
+  {
+    "login": "User 8",
+    "email": "user8@mail.com",
+    "name": "User ibn user",
+    "type": "user"
+  },
+  {
+    "login": "User 9",
+    "email": "user9@mail.com",
+    "name": "User ibn user",
+    "type": "user"
+  },
+  {
+    "login": "User 10",
+    "email": "user10@mail.com",
+    "name": "User ibn user",
+    "type": "user"
+  },
+  {
+    "login": "User 11",
+    "email": "user11@mail.com",
+    "name": "User ibn user",
+    "type": "user"
+  },
+  {
+    "login": "User 12",
+    "email": "user12@mail.com",
+    "name": "User ibn user",
+    "type": "user"
+  },
+  {
+    "login": "User 13",
+    "email": "user13@mail.com",
+    "name": "User ibn user",
+    "type": "user"
+  },
+  {
+    "login": "User 14",
+    "email": "user14@mail.com",
+    "name": "User ibn user",
+    "type": "user"
+  },
+  {
+    "login": "User 15",
+    "email": "user15@mail.com",
+    "name": "User ibn user",
+    "type": "user"
+  },
+  {
+    "login": "User 16",
+    "email": "user16@mail.com",
+    "name": "User ibn user",
+    "type": "user"
+  }
+]

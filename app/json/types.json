@@ -1,0 +1,6 @@
+[
+  {"type": "admin", "label": "Administrator"},
+  {"type": "moderator", "label": "Moderator"},
+  {"type": "manager", "label": "Manager"},
+  {"type": "user", "label": "User"}
+]

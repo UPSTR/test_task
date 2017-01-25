@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Task</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="app/js/app.js"></script>
+</head>
+<body>
+<div class="container" ng-controller="MainCtrl">
+
+
+    <h1>Test Task</h1>
+
+    <select ng-model="typeFilter" ng-options="t.type as t.type for t in types">
+        <option value="">all</option>
+    </select>
+
+    <!--<input type="text" ng-model="search" class="form-control">-->
+    <hr/>
+
+    <table class="table">
+        <thead>
+            <th>
+                #
+            </th>
+            <th>
+                <a href="" ng-click="sort('login')">Login
+                    <span class="glyphicon sort-icon" ng-show="sortKey=='login'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                </a>
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                E-mail
+            </th>
+            <th>
+                <a href="" ng-click="sort('type')">Type
+                    <span class="glyphicon sort-icon" ng-show="sortKey=='type'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                </a>
+            </th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="user in users | filter: (!!typeFilter || undefined) && {type: typeFilter} | orderBy:sortKey:reverse | filter:search| startFrom:currentPage*pageSize | limitTo:pageSize">
+                <td>{{$index + 1}}</td>
+                <td>{{user.login}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.type}}</td>
+
+            </tr>
+        </tbody>
+
+    </table>
+
+    <button class="btn btn-info" ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1">
+        Назад
+    </button>
+
+    <button class="btn btn-info" ng-disabled="currentPage >= getData().length/pageSize - 1" ng-click="currentPage=currentPage+1">
+        Вперед
+    </button>
+
+</div>
+</body>
+</html>
